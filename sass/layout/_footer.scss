@@ -1,0 +1,28 @@
+.section_footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--secondary-color);
+}
+.contacts-footer__link {
+    font-style: normal;
+    color: var(--primary-color);
+    opacity: 0.6;
+    transition: color var(--transition-dur-and-func);
+    
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+.contacts-footer__link_address {
+    opacity: 1;
+}
+.contacts-footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-container {
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    align-items: baseline;
+}

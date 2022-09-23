@@ -1,0 +1,20 @@
+.features-list {
+    display: flex;
+    column-gap: 30px;
+}
+.features-list__aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background: var(--button-color);
+    border-radius: 4px;
+    border: none;
+}
+
+.features-list__icon {
+    width: 70px;
+    height: 70px;
+}
