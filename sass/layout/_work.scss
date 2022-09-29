@@ -1,11 +1,16 @@
-@media screen and (min-width: 768px) {
-    .title, .work-list, .work-box, 
+@media screen and (max-width: 1198px) {
+    .title, .work-list,
+    .work-box, 
     .work-box__overlay,
-    .work-box__text {
+    .work-box__text,
+    .section_work {
         display: none;
     }
 }
 @media screen and (min-width: 1200px) {
+    .section_work {
+        padding-top: 0;
+    }
     .work-list {
         display: flex;
         column-gap: 30px;

@@ -141,7 +141,7 @@
             </div>
         </section>
         <!-- Чим ми займаємося -->
-        <!-- <section class="section">
+        <section class="section section_work">
             <div class="container">
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="work-list">
@@ -171,14 +171,20 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Наша команда -->
-        <!-- <section class="section team">
+        <section class="section team">
             <div class="container">
-                <h2 class="title">Наша команда</h2>
+                <h2 class="title title-open">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-list__cards">
-                    <img class="team-list__img" src="./images/card-1.jpg" alt="дизайнер" width="270" height="260">
+                    <picture class="team-list__pic">
+                        <source srcset="./images/desktop/card-1@1x.jpg 1x, ./images/desktop/card-1@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/tablet/card-1@1x.jpg 1x, ./images/tablet/card-1@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mobile/card-1@1x.jpg 1x, ./images/mobile/card-1@2x.jpg 2x" media="(max-width: 767px)">
+                        
+                        <img class="team-list__img" src="./images/card-1.jpg" alt="дизайнер">
+                    </picture>
                     <div class="team-list__box">
                         <h3 class="team-list__member">Ігор Дем'яненко</h3>
                         <p class="team-list__position" lang="en">Product Designer</p>
@@ -215,7 +221,13 @@
                     </div>
                 </li>
                 <li class="team-list__cards">
-                    <img class="team-list__img" src="./images/card-2.jpg" alt="розробник" width="270" height="260">
+                    <picture class="team-list__pic">
+                        <source srcset="./images/desktop/card-2@1x.jpg 1x, ./images/desktop/card-2@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/tablet/card-2@1x.jpg 1x, ./images/tablet/card-2@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mobile/card-2@1x.jpg 1x, ./images/mobile/card-2@2x.jpg 2x" media="(max-width: 767px)">
+                        
+                        <img class="team-list__img" src="./images/card-2.jpg" alt="розробник">
+                    </picture>
                     <div class="team-list__box">
                         <h3 class="team-list__member">Ольга Рєпіна</h3>
                         <p class="team-list__position" lang="en">Frontend Developer</p>
@@ -252,7 +264,13 @@
                     </div>
                 </li>
                 <li class="team-list__cards">
-                    <img class="team-list__img" src="./images/card-3.jpg" alt="менеджер" width="270" height="260">
+                    <picture class="team-list__pic">
+                        <source srcset="./images/desktop/card-3@1x.jpg 1x, ./images/desktop/card-3@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/tablet/card-3@1x.jpg 1x, ./images/tablet/card-3@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mobile/card-3@1x.jpg 1x, ./images/mobile/card-3@2x.jpg 2x" media="(max-width: 767px)">
+                        
+                        <img class="team-list__img" src="./images/card-3.jpg" alt="менеджер">
+                    </picture>
                     <div class="team-list__box">
                         <h3 class="team-list__member">Микола Тарасов</h3>
                         <p class="team-list__position" lang="en">Marketing</p>
@@ -289,7 +307,13 @@
                     </div>
                 </li>
                 <li class="team-list__cards">
-                    <img class="team-list__img" src="./images/card-4.jpg" alt="UI дизайнер" width="270" height="260">
+                    <picture class="team-list__pic">
+                        <source srcset="./images/desktop/card-4@1x.jpg 1x, ./images/desktop/card-4@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/tablet/card-4@1x.jpg 1x, ./images/tablet/card-4@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mobile/card-4@1x.jpg 1x, ./images/mobile/card-4@2x.jpg 2x" media="(max-width: 767px)">
+                        
+                        <img class="team-list__img" src="./images/card-4.jpg" alt="UI-дизайнер">
+                    </picture>
                     <div class="team-list__box">
                         <h3 class="team-list__member">Михайло Єрмаков</h3>
                         <p class="team-list__position" lang="en">UI Designer</p>
@@ -327,11 +351,11 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Clients  -->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
-                <h2 class="title">Постійні клієнти</h2>
+                <h2 class="title title-open">Постійні клієнти</h2>
             <ul class="clients-list">
                 <li class="clients-list__item">
                     <a class="clients-list__link" href="">
@@ -377,7 +401,7 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- Футер -->
     <!-- <footer class="section section_footer">
