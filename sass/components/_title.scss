@@ -3,8 +3,7 @@
     font-style: normal;
     letter-spacing: 0.03em;
 }
-.title,
-.title-open {
+.title {
     @include textstyle;
     margin-bottom: 50px;
     font-weight: 700;
@@ -33,12 +32,3 @@
     color: var(--text-color);
     text-transform: none;
 }
-// .title-open {
-//     @include textstyle;
-//     margin-bottom: 50px;
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.16;
-//     text-align: center;
-//     color: var(--title-text-color);
-// }

@@ -532,8 +532,7 @@ a {
   color: var(--primary-color);
 }
 
-.title,
-.title-open {
+.title {
   font-family: "Roboto";
   font-style: normal;
   letter-spacing: 0.03em;
@@ -1034,11 +1033,7 @@ a {
   }
 }
 @media screen and (max-width: 1198px) {
-  .title, .work-list,
-.work-box,
-.work-box__overlay,
-.work-box__text,
-.section_work {
+  .section_work {
     display: none;
   }
 }
