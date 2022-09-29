@@ -28,6 +28,11 @@
     height: 60px;
     fill: currentColor;
 }
+@media screen and (min-width: 768px) {
+    .clients-list__link {
+        width: 226px;
+    }
+}
 @media screen and (min-width: 1200px) {
     .clients-list {
         display: flex;
@@ -35,4 +40,8 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+    .clients-list__link {
+        width: 170px;
+    }
 }
+

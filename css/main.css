@@ -156,7 +156,9 @@ a {
 }
 
 .logo_footer {
+  display: block;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .logo-header {
@@ -556,6 +558,10 @@ a {
   color: var(--primary-color);
 }
 
+.subtitle_footer {
+  text-align: center;
+}
+
 .subtitle_features {
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -571,7 +577,8 @@ a {
 
 .footer-form {
   display: flex;
-  column-gap: 10px;
+  flex-direction: column;
+  gap: 20px;
 }
 .footer-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -603,6 +610,21 @@ a {
   fill: var(--primary-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .footer-form__input {
+    width: 358px;
+  }
+}
 .clients-list {
   display: flex;
   flex-direction: row;
@@ -633,12 +655,20 @@ a {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .clients-list__link {
+    width: 226px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+  }
+  .clients-list__link {
+    width: 170px;
   }
 }
 .features-list {
@@ -703,6 +733,10 @@ a {
   background-color: var(--secondary-color);
 }
 
+.contacts-footer {
+  text-align: center;
+}
+
 .contacts-footer__link {
   font-style: normal;
   color: var(--primary-color);
@@ -723,11 +757,37 @@ a {
 
 .footer-container {
   display: flex;
+  flex-direction: column;
   gap: 70px;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
+.footer-container_tablet {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer-container_tablet {
+    display: flex;
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .footer-container_tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  }
+}
 @media screen and (max-width: 767px) {
   .site-nav,
 .site-nav__link,
