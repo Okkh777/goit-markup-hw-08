@@ -1,5 +1,4 @@
 .section-hero {
-    // max-width: 480px;
     min-height: 400px;
     margin: auto;
     padding-top: 118px;
@@ -15,7 +14,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    // width: 480px;
 }
 .hero {
     margin-bottom: 30px;
@@ -59,11 +57,3 @@
     background-image: url(../images/desktop/header@2x.jpg);
   }
 }
-
-// .banner {
-//     min-height: 600px;
-//     background-image: url('../images/car-mobile.jpg');
-//     background-position: center top;
-//     background-size: 960px 576px;
-//     background-repeat: no-repeat;
-//   }
