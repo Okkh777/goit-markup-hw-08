@@ -97,6 +97,7 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
+  overflow: scroll;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -392,16 +393,13 @@ a {
   .mobile-menu__box {
     display: flex;
     flex-direction: column;
-    column-gap: 300px;
     padding-top: 48px;
   }
   .mobile-menu__list {
     display: flex;
     flex-direction: column;
+    gap: 32px;
     margin-bottom: 300px;
-  }
-  .mobile-menu__item:not(:last-child) {
-    margin-bottom: 35px;
   }
   .mobile-menu__link {
     display: inline-block;
@@ -728,8 +726,6 @@ a {
   }
 }
 .section_footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--secondary-color);
 }
 
@@ -770,22 +766,30 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1198px) {
   .footer-container_tablet {
-    display: flex;
+    flex-direction: row;
     gap: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
-    display: flex;
     flex-direction: row;
     gap: 70px;
     justify-content: space-around;
     align-items: baseline;
   }
   .footer-container_tablet {
-    display: flex;
     flex-direction: row;
     gap: 70px;
+  }
+  .subtitle_footer {
+    text-align: left;
+  }
+  .logo_footer {
+    text-align: left;
+  }
+  .contacts-footer__link {
+    display: flex;
+    align-items: flex-start;
   }
 }
 @media screen and (max-width: 767px) {
@@ -941,7 +945,7 @@ a {
 }
 .list-buttons {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
@@ -969,8 +973,13 @@ a {
 
 .list-cards {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.list-cards__item {
+  width: 100%;
 }
 
 .list-cards__link {
@@ -980,6 +989,10 @@ a {
 }
 .list-cards__link:hover, .list-cards__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.list-cards__img {
+  width: 100%;
 }
 
 .list-cards__overlay {
@@ -1031,6 +1044,30 @@ a {
   color: var(--text-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .list-cards {
+    flex-direction: row;
+  }
+  .list-cards__img {
+    width: 354px;
+  }
+  .list-cards__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .list-cards__img {
+    width: 370px;
+  }
+  .list-cards__item {
+    width: 370px;
+  }
+}
 .team {
   background-color: var(--button-color);
 }
