@@ -354,8 +354,17 @@ a {
 }
 @media screen and (max-width: 450px) {
   .modal {
-    width: 300px;
-    height: 609px;
+    width: 280px;
+    height: 550px;
+  }
+  .modal-form__checkbox {
+    margin-bottom: 15px;
+  }
+  .modal__user-data {
+    font-size: 16px;
+  }
+  .modal-form__comment {
+    height: 80px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -614,6 +623,11 @@ a {
   fill: var(--primary-color);
 }
 
+@media screen and (max-width: 380px) {
+  .footer-form__input {
+    width: 280px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1198px) {
   .footer-form__input {
     width: 450px;
@@ -965,6 +979,7 @@ a {
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
+  text-decoration-color: var(--title-text-color);
   background-color: var(--button-color);
   border-radius: 4px;
   border: none;
