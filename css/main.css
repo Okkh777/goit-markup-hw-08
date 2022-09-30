@@ -456,7 +456,7 @@ a {
   }
   .mobile-menu__social-list {
     display: flex;
-    column-gap: 20px;
+    gap: 20px;
     flex-wrap: wrap;
   }
   .mobile-menu__social-list-link {

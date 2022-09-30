@@ -65,9 +65,6 @@
     .mobile-menu__link_current {
         color: var(--accent-color);
     }
-    .mobile-menu__aside {
-
-    }
     .mobile-menu__contacts {
         margin-bottom: 64px;
     }
@@ -91,7 +88,7 @@
     
     .mobile-menu__social-list {
         display: flex;
-        column-gap: 20px;
+        gap: 20px;
         flex-wrap: wrap;
     }
     .mobile-menu__social-list-link {
