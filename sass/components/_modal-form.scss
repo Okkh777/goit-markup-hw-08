@@ -94,6 +94,7 @@
 .modal-form__input-checkbox {
     position: absolute;
     appearance: none;
+    font-size: 12px;
 }
 .modal-form__input-checkbox:checked + .modal-form__checkbox-icon .modal-form__checkbox-pic {
     display: block;
