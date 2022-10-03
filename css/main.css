@@ -728,7 +728,6 @@ a {
 .features-list__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .features-list__aside {
@@ -968,6 +967,11 @@ a {
   color: var(--primary-color);
 }
 
+@media screen and (max-width: 479px) {
+  .hero {
+    font-size: 24px;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header@2x.jpg);
@@ -990,6 +994,9 @@ a {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header@1x.jpg);
+  }
+  .section-hero__box {
+    width: 700px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -1038,7 +1045,9 @@ a {
 }
 
 .list-cards__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: var(--title-text-color);
   transition: box-shadow var(--transition-dur-and-func);
 }
@@ -1079,6 +1088,7 @@ a {
 }
 
 .list-cards__box {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: none;

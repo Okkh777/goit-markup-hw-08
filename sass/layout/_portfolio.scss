@@ -42,7 +42,9 @@
     width: 100%;
 }
 .list-cards__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     color: var(--title-text-color);
     transition: box-shadow var(--transition-dur-and-func);
 
@@ -85,6 +87,7 @@
     color: var(--primary-color);
 }
 .list-cards__box {
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
